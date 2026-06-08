@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CareerOS Dashboard</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="layout">
+
+<button class="menu-btn" onclick="toggleSidebar()">
+    ☰
+</button>
+
+<div class="sidebar">
+
+    <h2>CareerOS</h2>
+
+    <a href="dashboard.html">🏠 Dashboard</a>
+    <a href="profile-view.html">👤 Profile</a>
+    <a href="skill-analysis.html">📊 Skill Analysis</a>
+    <a href="ai-recommendations.html">🤖 AI Recommendations</a>
+    <a href="roadmap.html">🎯 Career Roadmap</a>
+    <a href="job-match.html">💼 Job Match</a>
+    <a href="achievements.html">🏆 Achievements</a>
+    <a href="settings.html">⚙️ Settings</a>
+    <a href="index.html">🚪 Logout</a>
+
+</div>
+
+<div class="main-content">
+
+    <div class="dashboard-container">
+
+        <div class="welcome-card">
+
+            <h1 id="welcomeName">
+                Welcome
+            </h1>
+
+            <p>
+                Let's continue your career journey 🚀
+            </p>
+
+        </div>
+
+        <div class="readiness-card">
+
+            <h2>Career Readiness</h2>
+
+            <div class="meter">
+
+                <div class="meter-fill">
+                    72%
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="mission-card">
+
+            <h2>Today's Mission</h2>
+
+            <ul>
+
+                <li>✅ Solve 2 LeetCode Problems</li>
+                <li>✅ Push 1 GitHub Commit</li>
+                <li>✅ Complete 1 Learning Module</li>
+
+            </ul>
+
+        </div>
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+
+                <h3>Resume Score</h3>
+
+                <p>85%</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3>GitHub Score</h3>
+
+                <p>70%</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3>LeetCode Score</h3>
+
+                <p>60%</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+function toggleSidebar(){
+
+    document.querySelector(".sidebar")
+    .classList.toggle("show");
+
+}
+
+const firstName =
+localStorage.getItem("firstName") || "Student";
+
+document.getElementById("welcomeName")
+.innerText =
+`Welcome, ${firstName} 👋`;
+
+</script>
+
+</body>
+</html>

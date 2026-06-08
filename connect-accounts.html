@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerOS - Connect Accounts</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="layout">
+
+    <div class="sidebar">
+
+        <h2>CareerOS</h2>
+
+        <a href="dashboard.html">🏠 Dashboard</a>
+
+        <a href="profile-view.html">👤 Profile</a>
+
+        <a href="skill-analysis.html">📊 Skill Analysis</a>
+
+        <a href="ai-recommendations.html">🤖 AI Recommendations</a>
+
+        <a href="roadmap.html">🎯 Career Roadmap</a>
+
+        <a href="resume-insights.html">📄 Resume Insights</a>
+
+        <a href="job-match.html">💼 Job Match</a>
+
+        <a href="achievements.html">🏆 Achievements</a>
+
+        <a href="settings.html">⚙️ Settings</a>
+
+        <a href="index.html">🚪 Logout</a>
+
+    </div>
+
+    <div class="main-content">
+
+        <!-- Page Content Goes Here -->
+
+    </div>
+
+</div>
+
+<div class="connect-container">
+
+    <div class="connect-card">
+
+        <h2>Connect Your Accounts</h2>
+
+        <p class="subtitle">
+            Help CareerOS analyze your career profile
+        </p>
+
+        <!-- Resume Upload -->
+
+        <label>Upload Resume *</label>
+
+        <input
+            type="file"
+            id="resume"
+            accept=".pdf,.doc,.docx">
+
+        <p id="resumeError" class="error-message"></p>
+
+        <!-- GitHub -->
+
+        <input
+            type="text"
+            id="github"
+            placeholder="GitHub Username">
+
+        <p id="githubError" class="error-message"></p>
+
+        <!-- LeetCode -->
+
+        <input
+            type="text"
+            id="leetcode"
+            placeholder="LeetCode Username">
+
+        <p id="leetcodeError" class="error-message"></p>
+
+        <!-- LinkedIn -->
+
+        <input
+            type="url"
+            id="linkedin"
+            placeholder="LinkedIn Profile URL (Optional)">
+
+        <p id="linkedinError" class="error-message"></p>
+
+        <button onclick="analyzeCareer()">
+            Analyze My Career
+        </button>
+
+    </div>
+
+</div>
+
+<script src="js/connect.js"></script>
+
+</body>
+</html>

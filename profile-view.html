@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CareerOS - My Profile</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="layout">
+
+    <div class="sidebar">
+
+        <h2>CareerOS</h2>
+
+        <a href="dashboard.html">🏠 Dashboard</a>
+
+        <a href="profile-view.html">👤 Profile</a>
+
+        <a href="skill-analysis.html">📊 Skill Analysis</a>
+
+        <a href="ai-recommendations.html">🤖 AI Recommendations</a>
+
+        <a href="roadmap.html">🎯 Career Roadmap</a>
+
+        <a href="resume-insights.html">📄 Resume Insights</a>
+
+        <a href="job-match.html">💼 Job Match</a>
+
+        <a href="achievements.html">🏆 Achievements</a>
+
+        <a href="settings.html">⚙️ Settings</a>
+
+        <a href="index.html">🚪 Logout</a>
+
+    </div>
+
+    <div class="main-content">
+
+        <!-- Page Content Goes Here -->
+
+    </div>
+
+</div>
+
+
+    <div class="profile-view-card">
+
+        <h1>👤 My Profile</h1>
+
+        <div class="profile-section">
+
+            <h3>Personal Information</h3>
+
+            <p><strong>Full Name:</strong> <span id="fullName"></span></p>
+
+            <p><strong>College Name:</strong> <span id="collegeName"></span></p>
+
+            <p><strong>Department:</strong> <span id="branch"></span></p>
+
+            <p><strong>Graduation Year:</strong> <span id="graduationYear"></span></p>
+
+            <p><strong>Target Role:</strong> <span id="targetRole"></span></p>
+
+        </div>
+
+        <div class="profile-section">
+
+            <h3>Connected Accounts</h3>
+
+            <p><strong>GitHub:</strong> <span id="github"></span></p>
+
+            <p><strong>LeetCode:</strong> <span id="leetcode"></span></p>
+
+            <p><strong>LinkedIn:</strong> <span id="linkedin"></span></p>
+
+        </div>
+
+        <button onclick="window.location.href='profile.html'">
+            Edit Profile
+        </button>
+
+    </div>
+
+
+
+<script>
+
+const firstName = localStorage.getItem("firstName") || "";
+const middleName = localStorage.getItem("middleName") || "";
+const lastName = localStorage.getItem("lastName") || "";
+
+document.getElementById("fullName").innerText =
+`${firstName} ${middleName} ${lastName}`;
+
+document.getElementById("collegeName").innerText =
+localStorage.getItem("collegeName") || "-";
+
+document.getElementById("branch").innerText =
+localStorage.getItem("branch") || "-";
+
+document.getElementById("graduationYear").innerText =
+localStorage.getItem("graduationYear") || "-";
+
+document.getElementById("targetRole").innerText =
+localStorage.getItem("targetRole") || "-";
+
+document.getElementById("github").innerText =
+localStorage.getItem("github") || "-";
+
+document.getElementById("leetcode").innerText =
+localStorage.getItem("leetcode") || "-";
+
+document.getElementById("linkedin").innerText =
+localStorage.getItem("linkedin") || "Not Provided";
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CareerOS - Job Match</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div class="layout">
+
+    <div class="sidebar">
+
+        <h2>CareerOS</h2>
+
+        <a href="dashboard.html">🏠 Dashboard</a>
+
+        <a href="profile-view.html">👤 Profile</a>
+
+        <a href="skill-analysis.html">📊 Skill Analysis</a>
+
+        <a href="ai-recommendations.html">🤖 AI Recommendations</a>
+
+        <a href="roadmap.html">🎯 Career Roadmap</a>
+
+        <a href="resume-insights.html">📄 Resume Insights</a>
+
+        <a href="job-match.html">💼 Job Match</a>
+
+        <a href="achievements.html">🏆 Achievements</a>
+
+        <a href="settings.html">⚙️ Settings</a>
+
+        <a href="index.html">🚪 Logout</a>
+
+    </div>
+
+    <div class="main-content">
+
+        <!-- Page Content Goes Here -->
+
+    </div>
+
+</div>
+
+
+    <div class="section">
+
+        <h1>💼 Job Match Analysis</h1>
+
+        <p>
+            See how well your profile matches your target role.
+        </p>
+
+    </div>
+
+    <div class="section">
+
+        <h2>Target Role</h2>
+
+        <h3 id="targetRoleDisplay">
+            Software Engineer
+        </h3>
+
+    </div>
+
+    <div class="section">
+
+        <h2>Match Score</h2>
+
+        <div class="match-score">
+
+            72%
+
+        </div>
+
+    </div>
+
+    <div class="section">
+
+        <h2>✅ Strong Areas</h2>
+
+        <ul>
+
+            <li>Java</li>
+
+            <li>Python</li>
+
+            <li>SQL</li>
+
+            <li>Problem Solving</li>
+
+        </ul>
+
+    </div>
+
+    <div class="section">
+
+        <h2>⚠ Missing Skills</h2>
+
+        <ul>
+
+            <li>React</li>
+
+            <li>AWS</li>
+
+            <li>Docker</li>
+
+            <li>System Design</li>
+
+        </ul>
+
+    </div>
+
+    <div class="section">
+
+        <h2>🏢 Suggested Companies</h2>
+
+        <ul>
+
+            <li>TCS</li>
+
+            <li>Infosys</li>
+
+            <li>Cognizant</li>
+
+            <li>Accenture</li>
+
+            <li>Zoho</li>
+
+        </ul>
+
+    </div>
+
+
+
+<script>
+
+document.getElementById("targetRoleDisplay")
+.innerText =
+localStorage.getItem("targetRole") ||
+"Software Engineer";
+
+</script>
+
+</body>
+</html>

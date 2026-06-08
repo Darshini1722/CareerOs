@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerOS - Profile Setup</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+    <div class="main-content">
+
+        <!-- Page Content Goes Here -->
+
+    </div>
+
+</div>
+<div class="profile-container">
+
+    <div class="profile-card">
+
+        <h2>Complete Your Profile</h2>
+
+        <p class="subtitle">
+            Help us personalize your career journey
+        </p>
+
+        <input type="text" id="firstName" placeholder="First Name">
+        <p id="firstNameError" class="error-message"></p>
+
+        <input type="text" id="middleName" placeholder="Middle Name (Optional)">
+
+        <input type="text" id="lastName" placeholder="Last Name">
+        <p id="lastNameError" class="error-message"></p>
+
+        <input type="text" id="collegeName" placeholder="College Name">
+        <p id="collegeError" class="error-message"></p>
+
+        <input type="text" id="branch" placeholder="Branch">
+        <p id="branchError" class="error-message"></p>
+
+        <select id="graduationYear">
+            <option value="">Select Graduation Year</option>
+        </select>
+        <p id="graduationYearError" class="error-message"></p>
+
+        <select id="targetRole">
+            <option value="">Select Target Role</option>
+
+            <option>Software Engineer</option>
+            <option>Full Stack Developer</option>
+            <option>Frontend Developer</option>
+            <option>Backend Developer</option>
+            <option>Data Analyst</option>
+            <option>Data Scientist</option>
+            <option>AI / ML Engineer</option>
+            <option>Cloud Engineer</option>
+            <option>DevOps Engineer</option>
+            <option>Cyber Security Analyst</option>
+            <option>QA Automation Engineer</option>
+            <option>Mobile App Developer</option>
+            <option>UI/UX Designer</option>
+            <option>Product Manager</option>
+
+            <option value="other">Other</option>
+        </select>
+
+        <p id="targetRoleError" class="error-message"></p>
+
+        <input
+            type="text"
+            id="customRole"
+            placeholder="Enter Your Target Role"
+            style="display:none;">
+
+        <p id="customRoleError" class="error-message"></p>
+
+        <button onclick="validateProfile()">
+            Continue
+        </button>
+
+    </div>
+
+</div>
+
+<script src="js/profile.js"></script>
+
+</body>
+</html>
