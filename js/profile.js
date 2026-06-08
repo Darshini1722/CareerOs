@@ -184,13 +184,16 @@ graduationYear
 
 if(targetRole === "other"){
 
+
 localStorage.setItem(
     "targetRole",
     customRole
 );
 
+
 }
 else{
+
 
 localStorage.setItem(
     "targetRole",
